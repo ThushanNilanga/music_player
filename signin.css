@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*::before, *::after{
+    padding: 0;
+    margin: 0;
+  }
+body{
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(Website-Design-Background.png) ;
+    background-repeat: no-repeat;
+    background-size:220vh 100vh;
+    
+}
+.wrapper{
+
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(85, 82, 82);
+    height: 37em;
+    width: 25em;
+    margin: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: 0.7s;
+    
+
+}
+#linkcreate{
+
+    color: grey;
+    font-family: 'Quicksand',sans-serif;
+    transform: translateY(5px);
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form.hidden{
+    display: none;
+
+
+}
+.image{
+    width: 7pc;
+    height: 7pc;
+    border-radius: 80px;
+    background-color: rgba(128, 128, 128, 0.589);
+}
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    
+}
+.content .user{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding-left: 30px;
+    margin-left: -50px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.content .user .name{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.content .user .name span{
+    font: 300 12px 'Quicksand' ,sans-serif;
+    margin-left: 34px;
+    margin-top: 5px;
+    color: rgb(226, 43, 43);
+}
+.content .user .name span.success{
+
+    color: green;
+}
+.content .user i{
+    font-size: 20px;
+    
+    transform: translateY(7px);
+}
+#username,#password{
+    
+    width: 17pc;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 30px;   
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+    font-family: 'Quicksand', sans-serif;
+
+}
+.add{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.add span{
+    font-size: 12px;
+    color: #2b2b2b8e;
+    cursor: pointer;
+    
+}
+.add .rememberText{
+    margin-top: -3px;
+}
+.add .rememberText span{
+
+    padding: 10px;
+    cursor: pointer;
+
+    
+}
+.add .rememberText input{
+    
+    transform: translateY(2.5px);
+}
+.message_up_error{
+
+
+    transform: translateY(20px);
+    font: 500 15px 'Quicksand',sans-serif;
+    color:  rgb(226, 43, 43);;
+}
+.message_up_error.success{
+
+    color: green;
+}
+.button{
+
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#00d7fd,#ea03ff);
+    border-radius: 30px;
+    cursor: pointer;
+    
+
+}
+.button a{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: -8px;
+    background-color: transparent;
+    height: 30px;
+    
+    
+
+}
+.button  span{
+    font-family: 'Quicksand', sans-serif;
+}
+.orms{
+    color: #5350509d;
+    font-size: 15px;
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    
+}
+.icons{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.icons img{
+    padding: 6px;
+    cursor: pointer;
+
+}
+#create span{
+
+    font: 500 25px 'Quicksand',sans-serif;
+}
+#create .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#create .name{
+    margin-top: 30px;
+    margin-left: 45px;
+
+}
+#create .button #createbutton{
+    font-size: 16px;
+}
+#link_login{
+    margin-top: 30px;
+    color: grey;
+    font-family: 'Quicksand',sans-serif;
+    transform: translateY(25px);
+}
+.wel{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    transition: 0.7s;
+}
+.wel span{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 7em;
+    text-align-last: right;
+    
+    font-family:'Quicksand',sans-serif;
+}
+.wel #small{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+@media screen and (max-width:57em){
+
+    .body{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+       min-width: 25em;
+       max-width: 25em;
+       max-height: 37em;
+    }
+  
+    .wel{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    .wel span, .wel #small{
+        font-size: 0px;
+    }
+}

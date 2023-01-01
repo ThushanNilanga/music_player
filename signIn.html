@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form " id="login">
+          <div class="image"></div>
+          <div class="content">
+             <div class="user">
+                <div class="name">
+                    <div class="namedisplay"><i class='bx bx-user'></i>
+                        <input id="username" type="text" placeholder="Username"></div>
+                    <span class="message_error"></span>
+                </div>
+                <div class="pass">
+                    <i class='bx bx-lock-open-alt'></i>
+                    <input id="password" type="password" placeholder="Password">
+                </div>
+                
+             </div>
+             <div class="add">
+                <div class="rememberText" >
+                    <input type="checkbox" name="tick" id="remember"><span id="remText">Remember me</span>
+                </div>
+                <span>forgot password ?</span>
+             </div>
+             <div class="message_up_error"></div>
+             <div class="button">
+                <a href="#" id="loginbutton"><span>Login</span></a>
+             </div>
+             <span class="orms">
+             ---------- Or Sign in Using ----------
+             </span>
+             <div class="icons">
+             <a href="https://www.facebook.com/login.php?skip_api_login"><img src="facebook (1).png" alt=""></a>
+             <img src="twitter.png" alt="">
+             <a href="https://accounts.google.com/gsi/select?client_id=694505692171-31closf3bcmlt59aeulg2j81ej68j6hk.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=card&context=use&as=lOoqj3olJ838i2JY1K8z9g&channel_id=2098035eccd0da01095ed0871b7b3183335379a227ed3a9f08a3836c72119e87&origin=https%3A%2F%2Fwww.pinterest.com"><img src="google.png" alt=""></a>
+            </div>
+            <a href="#" id="linkcreate">Doesn't have an account? Create an account</a>
+         </div>
+    </form>
+    <form class="form hidden" id="create">
+        
+        <div class="content">
+            <span>Create Account</span>
+           <div class="user">
+              <div class="name">
+                  <div class="namedisplay">
+                      <input class="username" id="username" type="text" placeholder="Username" >
+                      
+                        <input class="email" id="username" type="text" placeholder="E-mail">
+                 </div>
+              <div class="pass">
+                  
+                  <input class="password" id="password" type="password" placeholder="Password" onfocus="pasw()">
+                  <input class="conpassword" id="password" type="password" placeholder="Confirm Password">
+              </div>
+              
+           </div>
+           </div>
+           
+           <div class="message_up_error"></div>
+           <div class="button">
+              <a href="#"><span id="createbutton">Create </span></a>
+           </div>
+          
+           <a href="#" id="link_login">Already have an account? Sign in</a>
+           <div class="arraydisplay"><span class="nameshow"></span></div>
+          
+       </div>
+  </form>
+    </div>
+    <div class="wel">
+        <span>Welcome to <br> MXtudio </span>
+        <span id="small">Sign In For Amazing Features</span>
+    </div>
+    <script src="sign_in.js"></script>
+</body>
+</html>

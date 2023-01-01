@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+
+    
+    <div class="header">
+        <nav>
+            <div class="mu"><h2>MXtudio</h2></div>
+            <div class="men">
+                <ul>
+                
+                    <li id="lihome"><div class="uldiv"><span>Home</span></div></li>
+                    <li id="licontact" onmouseover="con()" onmouseleave="uncon()"><div class="uldiv"><span onmouseover="con()" onmouseleave="uncon()">Contact</span><i class="bx bx-chevron-down" onmouseover="con()" onmouseleave="uncon()"></i></div></li>
+                    <li id="lidownload"><div class="uldiv"><span>Download</span></div></li>
+                    <li id="sign"><a href="pages/sign_in_page/signIn.html" target="_blank">Sign In</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+        </div>
+    <div class="main">
+        
+        <div class="menuI">
+            <i id="mn" class='bx bx-menu'></i>
+            <div class="srch">
+                <ul>
+                    <li class="search_btn">
+                        <a href="#">
+                            <i id="search_icon" class='bx bx-search'></i>
+                        </a>
+                        
+                        <input id="search" type="text" placeholder="Search">
+                    </li>
+                </ul>
+            </div>
+            <ul id="controls">
+                <li id="homepage" class="active" >
+                    <a href="#" onclick='loadHtml("template","Playlist.html")'>                    
+                       <i class='bx bx-home'></i>
+                       <span>Home</span>
+                     </a>
+              </li>
+                <li id="playlistpage">
+                     <a href="#">                    
+                        <i class='bx bxs-playlist'></i>
+                        <span>Playlist</span>
+                      </a>
+               </li>
+                <li>
+                       <a href="#">
+                        <i class='bx bx-headphone'></i>
+                        <span>Songs</span>
+                        </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class='bx bx-music'></i>
+                        <span>Library</span>
+                   </a>
+             </li>
+                
+            </ul>
+        </div>
+        <div class="Home active">
+            <div class="mnhead">
+               <div class="Contact_page" onmouseover="con()" onmouseleave="uncon()"><ul>
+                <li><a href="https://wa.me/94710651400" target="_blank">Whatsapp</a> </li>
+                <li><a href="mailto:gmail.com" target="_blank">E-mail</a></li>
+               </ul></div>
+                <div class="combo">
+                    <div class="Genre">
+                        <div class="selection">
+                            <span>Genre</span>
+                            <i id="gr_ch" class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="Gnsel">
+                            <ul>
+                                
+                                <li>Pop</li>
+                                <li>Rock</li>
+                                <li>Classical</li>
+                                <li>Dj</li>
+                                <li>Jazz</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Sort">
+                        <div class="select_sort">
+                            <span>Sort by</span>
+                            <i id="sr_ch" class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="Sosel">
+                            <ul>
+                                <li>10</li>
+                                <li>20</li>
+                                <li>50</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="mnbody">
+                <ul>
+                    
+                    
+                     <li li-index="11">
+                        <span>Heat Waves</span>
+                        <p>Glass Animals</p>
+                        <span id="heatwaves" class="audio-duration" t-duration="3:55">3:55</span>
+                        <audio src="songs/Heat Waves.mp3" class="heatwaves"></audio> 
+                     </li>
+                    <li li-index="12">
+                       <span>2 step</span>
+                       <p>Ed Sheeran</p>
+                       <span id="2step" class="audio-duration" t-duration="3:27">3:27</span>
+                       <audio src="songs/2step.mp3" class="2step"></audio> 
+                    </li>
+                    
+                     <li li-index="7">
+                        <span>Love Nwantiti</span>
+                        <p>Ckay</p>
+                        <span id="lovenwantiti" class="audio-duration" t-duration="3:13">3:13</span>
+                        <audio src="songs/Love Nwantiti.mp3" class="lovenwantiti"></audio> 
+                     </li>
+                     <li li-index="8">
+                        <span>Better Days</span>
+                        <p>Arman Cekin & Faydee ft.Karra</p>
+                        <span id="betterdays" class="audio-duration" t-duration="3:08">3:08</span>
+                        <audio src="songs/Better Days.mp3" class="betterdays"></audio> 
+                     </li>
+                     <li li-index="9">
+                        <span>All About It</span>
+                        <p>Deep Chills</p>
+                        <span id="allaboutit" class="audio-duration" t-duration="2:22">2:22</span>
+                        <audio src="songs/All About It.mp3" class="allaboutit"></audio> 
+                     </li>
+                     <li li-index="10">
+                        <span>Mood</span>
+                        <p>24kGoldn</p>
+                        <span id="mood" class="audio-duration" t-duration="2:24">2:24</span>
+                        <audio src="songs/Mood.mp3" class="mood"></audio> 
+                     </li>
+                     <li li-index="6">
+                        <span>Bad Habbits</span>
+                        <p>Ed Sheeran</p>
+                        <span id="badhabits" class="audio-duration" t-duration="3:58">3:58</span>
+                        <audio src="songs/BadHabits.mp3" class="badhabits"></audio> 
+                     </li>
+                </ul>
+             </div>    
+            
+        </div>
+        
+        
+    </div>
+    
+    <div class="playback">
+    <div class="play_area">
+        <div class="image">
+            <img src="" alt="">
+        </div>
+        
+        <div class="song_play">
+            <div class="songdisplay">
+                <span class="songname">HI</span>
+                <span class="songartist">HI</span>
+            </div>
+            
+            <div class="pro"><div class="progress_bar"></div></div>
+            <div class="song_timer">
+            <span class="current">0:00</span>
+            <span class="duration"></span>
+            <audio id="main-audio" src=""></audio>
+            
+          </div>
+        
+            <div class="icons">
+                <div class="lpback normal">
+                    <i id="loop" class="material-icons normal" >loop</i>
+                </div>
+                <i id="prev" class="material-icons">skip_previous</i>
+                          
+                  <div class="play_pause">
+                    <i id="pl" class="material-icons xs">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons">skip_next</i>
+                <div class="shufback normal">
+                    <i id="shuffle" class="material-icons normal">shuffle</i>
+                </div>
+
+            </div>
+        
+        </div>
+    </div>
+    </div>
+</div>
+     <script src="pages.js"></script>
+    <script src="music-list.js"></script>
+    <script src="song.js"></script>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
